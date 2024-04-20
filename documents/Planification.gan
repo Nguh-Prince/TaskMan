@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="TaskMan (Projet SE)" company="ISJ" webLink="http://" view-date="2024-05-05" view-index="0" gantt-divider-location="292" resource-divider-location="300" version="3.3.3300" locale="en_US">
+    <description/>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd15" name="Notes" width="20" order="-1"/>
+        <field id="tpd3" name="Name" width="159" order="0"/>
+        <field id="tpd4" name="Begin date" width="69" order="1"/>
+        <field id="tpd5" name="End date" width="63" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#ccccff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="2c90324ff16e4dd1b186e5629d37ba82" name="Analyse" color="#ccccff" meeting="false" start="2024-04-12" duration="11" complete="0" thirdDate="2024-04-19" thirdDate-constraint="0" expand="true"/>
+        <task id="1" uid="45eda8e6d26241aab228eab0cf4c6883" name="Conception" meeting="false" start="2024-04-29" duration="11" complete="0" thirdDate="2024-04-19" thirdDate-constraint="0" expand="true"/>
+        <task id="2" uid="e599b7ef789c468493c8128d735e0d4a" name="Developpement" meeting="false" start="2024-05-06" duration="30" complete="0" thirdDate="2024-04-19" thirdDate-constraint="0" expand="true"/>
+        <task id="3" uid="fa116edbb85b491aa006fd11f44b2045" name="Tests" meeting="false" start="2024-05-31" duration="11" complete="0" thirdDate="2024-04-19" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
