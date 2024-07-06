@@ -16,6 +16,10 @@ class Process:
     icon: str
     user: User
 
+    cpu_usage: float
+    memory_usage: float
+    memory_info: str
+
 @dataclass
 class Service:
     name: str

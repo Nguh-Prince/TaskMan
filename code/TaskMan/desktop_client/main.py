@@ -8,7 +8,7 @@ from views.events import HoverEventFilter
 from views.widgets import Table
 
 icon_path = os.path.abspath("views/icon.png")
-
+print(icon_path)
 class BorderDelegate(QStyledItemDelegate):
     def paint(self, painter, option, index):
         # Draw the cell background

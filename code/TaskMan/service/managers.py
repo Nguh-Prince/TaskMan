@@ -52,6 +52,9 @@ class ProcessManager:
                     nice = proc.info['nice']
                     tty_nr = proc.info['terminal']
                     session = proc.session_id()
+                    cpu_usage = proc.cpu_percent(interval=0.1)
+                    memory_info = proc.memory_info()
+                    memory_usage = proc.memory_percent()
                     icon = cls.get_process_icon(name)
 
                     user = User(username=proc.info['username'])
@@ -59,7 +62,8 @@ class ProcessManager:
                     processes.append(
                         Process(
                             pid=pid, priority=priority, state=state, nice=nice, 
-                            tty_nr=tty_nr or -1, session=session, icon=icon, user=user
+                            tty_nr=tty_nr or -1, session=session, icon=icon, user=user,
+                            cpu_usage=cpu_usage, memory_usage=memory_usage, memory_info=memory_info
                         )
                     )
             except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
